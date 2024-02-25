@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce-task",
+  "version": "1.0.0",
+  "description": "Ecommerce project for Triveous",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmanDwivedi9335/ecomm-task.git"
+  },
+  "author": "Aman Dwivedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmanDwivedi9335/ecomm-task/issues"
+  },
+  "homepage": "https://github.com/AmanDwivedi9335/ecomm-task#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.1",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.3"
+  }
+}
