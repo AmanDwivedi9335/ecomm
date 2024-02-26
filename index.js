@@ -1,9 +1,7 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const jwt_secret = 'keytopass';
 
 //middleware
 app.use(express.json());
