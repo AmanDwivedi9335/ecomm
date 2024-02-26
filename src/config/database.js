@@ -1,13 +1,13 @@
 const { Pool } = require('pg');
-
+require('dotenv').config();//process.env
 
 
 const pool = new Pool({
-    user: 'amandwdi',
-    host: 'dpg-cne8duuv3ddc73ceul50-a',
-    database: 'ecommerce_db_me11',
-    password: 'L5F2x6csNyuE1zcUeQEWnz59A9sqohLm',
-    port: 5432
+    user: process.env.MYSQL_USER,
+    host: process.env.MYSQL_HOST,
+    database: process.env.MYSQL_DATABASE,
+    password: process.env.MYSQL_PASSWORD,
+    port: MYSQL_PORT
 })
 
 module.exports = pool;
