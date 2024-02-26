@@ -1,5 +1,5 @@
-const Product = require('../models/productsModel')
-const pool = require('../config/database')
+const Product = require('../models/productsModel');
+const pool = require('../config/database');
 
 //controller function to get all products
 const getAllProducts = async (req, res) => {

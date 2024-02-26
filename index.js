@@ -1,6 +1,9 @@
 const express = require('express');
+const jwt = require('jsonwebtoken');
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+const jwt_secret = 'keytopass';
 
 //middleware
 app.use(express.json());
@@ -9,8 +12,14 @@ app.use(express.json());
 // Import product routes
 const productRoutes = require('./src/routes/productRoutes');
 
+const userRoutes = require('./src/routes/userRoutes');
+
+//use authentication
+app.use('/', userRoutes);
+
 // Use product routes
 app.use('/api/products', productRoutes);
+
 
 // Start the server
 app.listen(PORT, () => {
