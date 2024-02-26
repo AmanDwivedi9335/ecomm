@@ -53,7 +53,7 @@ npm start
 
 ## Documentation
 
-API documentation is available using Swagger UI. Visit `/api-docs` endpoint to explore the documentation interactively.
+API documentation is available. Visit `/api-docs` endpoint to explore the documentation interactively.
 
 ## Contributors
 
