@@ -7,7 +7,7 @@ const pool = new Pool({
     host: process.env.MYSQL_HOST,
     database: process.env.MYSQL_DATABASE,
     password: process.env.MYSQL_PASSWORD,
-    port: MYSQL_PORT
+    port: 5432
 })
 
 module.exports = pool;
