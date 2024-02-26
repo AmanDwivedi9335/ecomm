@@ -1,6 +1,6 @@
 const User = require('../models/userModel');
 const pool = require('../config/database');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { JWT_SECRET } = require('../config/jwtKey');
 const jwt = require('jsonwebtoken');
 
